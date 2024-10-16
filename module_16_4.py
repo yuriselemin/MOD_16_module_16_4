@@ -42,3 +42,5 @@ async def delete_user(user_id: int) -> User:
             users.remove(user)
             return user
     raise HTTPException(status_code=404, detail="User was not found")
+
+
